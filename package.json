@@ -1,10 +1,14 @@
 {
   "name": "sparklepro-cleaning",
   "version": "0.1.0",
+  "hompage": "https://github.com/biokram/sparklepro-cleaning",
+  "description": "A cleaning service website built with Next.js and Tailwind CSS",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "predeploy": "npm run build",
+	  "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -26,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.6",
     "typescript": "^5"
